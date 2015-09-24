@@ -6,11 +6,15 @@
             .on('jcarousel:reload jcarousel:create', function () {
                 var width = jcarousel.innerWidth();
 
-                if (width >= 600) {
+                //** comp356-mac15 customisation to reduce whitespace
+                //**   show 4 squarethumbs if >800
+                if (width >= 800) {
+                    width = width / 4; 
+                } else if (width >= 600) {
                     width = width / 3;
                 } else if (width >= 350) {
                     width = width / 2;
-                }
+                } 
 
                 jcarousel.jcarousel('items').css('width', width + 'px');
             })
