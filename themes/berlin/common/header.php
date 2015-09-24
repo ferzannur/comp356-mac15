@@ -46,6 +46,12 @@
                 <?php echo search_form(); ?>
                 <?php endif; ?>
             </div>
+            
+            <div id="macquarie-redirect"> 
+            <a href="http://mq.edu.au">Click here to go to MQ </a>
+            </div>
+            
+            
         </header>
 
          <div id="primary-nav" role="navigation">

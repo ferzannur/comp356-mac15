@@ -627,6 +627,23 @@ header:after {
   text-decoration: none;
 }
 
+#macquarie-redirect {
+	float: right;
+  width: 45%;
+  margin-top: 15px;
+  position: relative;
+  font-size: 1.16667em;
+  line-height: 1.28571em;
+  color: red;
+}
+/*
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+*/
+
 #search-container {
   float: right;
   width: 45%;
@@ -634,6 +651,7 @@ header:after {
   font-size: 1.16667em;
   line-height: 1.28571em;
 }
+
 #search-container h2 {
   display: none;
 }
