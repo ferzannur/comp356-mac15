@@ -1,0 +1,10 @@
+/* Overrides for the .image class */
+
+div.jcarousel-wrapper a.image {
+	height: auto; 
+	margin-bottom: 0;
+    border-bottom: 0;
+/*     margin-left: -30px; */
+	}
+	
+	
