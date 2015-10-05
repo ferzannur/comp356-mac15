@@ -2,7 +2,7 @@
 <html class="<?php echo get_theme_option('Style Sheet'); ?>" lang="<?php echo get_html_lang(); ?>">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, user-scalable=yes" />
     <?php if ($description = option('description')): ?>
     <meta name="description" content="<?php echo $description; ?>" />
     <?php endif; ?>
@@ -39,6 +39,9 @@
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
             <div id="site-title"><?php echo link_to_home_page(theme_logo()); ?></div>
 
+            <!-- C356 reposition -->
+            <div id="header-image"><?php echo theme_header_image(); ?></div>
+
             <div id="search-container" role="search">
                 <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
                 <?php echo search_form(array('show_advanced' => true)); ?>
@@ -60,7 +63,7 @@
              ?>
          </div>
         
-        <?php echo theme_header_image(); ?>
+        <!-- ?php echo theme_header_image(); ?--->
                        
     <div id="content" role="main" tabindex="-1">
 
