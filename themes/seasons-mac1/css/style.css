@@ -27,7 +27,7 @@
   */
   /* !---------- General HTML Elements ---------- */
   body {
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -448,6 +448,11 @@
     margin: 0;
     padding-top: 0.75em;
     padding-bottom: 0.75em;
+  }
+  
+  #follow-us {
+  padding-top: 2%;
+  float: right;
   }
 
   #search-container {
@@ -1424,19 +1429,21 @@
     background-color: #fff;
   }
   .winter nav.top {
-    background-color: #228494;
+    background-color: grey;
   }
+  
+  /* From here below changes the nav bar colours */
   .winter nav.top li:hover a {
     color: #fff;
   }
   .winter nav.top a:link, .winter nav.top a:visited {
-    color: #def9ff;
+    color: #fff;
   }
   .winter nav.top a:active, .winter nav.top a:hover, .winter nav.top a:focus, .winter nav.top a.open {
     color: #fff;
   }
   .winter nav.top .sub-nav {
-    background-color: #2796a9;
+    background-color: grey;
   }
   .winter nav.top .sub-nav li > a:link, .winter nav.top .sub-nav li > a:visited, .winter nav.top .sub-nav li > a:active, .winter nav.top .sub-nav li > a:hover, .winter nav.top .sub-nav li > a:focus {
     color: #fff;
@@ -1453,7 +1460,9 @@
   .winter .secondary-nav .current a,
   .winter .secondary-nav a.current,
   .winter .exhibit-section-nav .current a {
-    background-color: #43ADB8;
+  
+  /*This is the background colour */
+    background-color: white;
   }
   .winter #home #content > div {
     border-color: #4b6569;
