@@ -52,9 +52,9 @@
             </div>
             
             <div id="follow-us">
-            <a href="https://www.facebook.com"><img src="http://i.imgur.com/qucRDXG.png" alt="FacebookIcon" height="42" width="42"></a>
-            <a href="https://www.linkedin.com"><img src="http://i.imgur.com/y0CDC2F.png" alt="LinkedinIcon" height="42" width="42"></a>
-            <a href="https://www.twitter.com"><img src="http://i.imgur.com/uWC5ykR.png" alt="TwitterIcon" height="42" width="42"></a>
+            <a href="https://www.facebook.com"><img src="/themes/seasons-mac1/images/fb.png" alt="FacebookIcon" height="42" width="42"></a>
+            <a href="https://www.linkedin.com"><img src="/themes/seasons-mac1/images/li.png" alt="LinkedinIcon" height="42" width="42"></a>
+            <a href="https://www.twitter.com"><img src="/themes/seasons-mac1/images/tw.png" alt="TwitterIcon" height="42" width="42"></a>
             </div>
            
             <div id="search-container" role="search">
