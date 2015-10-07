@@ -454,6 +454,11 @@
   padding-top: 2%;
   float: right;
   }
+  
+    
+  #follow-us-footer {
+  float: left;
+  }
 
   #search-container {
     padding: 0 16px 1.5em;
