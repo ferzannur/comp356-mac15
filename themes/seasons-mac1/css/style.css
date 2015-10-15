@@ -1422,13 +1422,16 @@
     background-color: #dfe2e2;
   }
   .winter a:link {
-    color: #228494;
+  /* COMP CHANGED */
+    color: blue;
   }
   .winter a:visited {
     color: #43ADB8;
   }
   .winter a:hover, .winter a:active, .winter a:focus {
-    color: #3acacc;
+    /* COMP CHANGED */
+
+    color: grey;
   }
   .winter header {
     background-color: #fff;
@@ -1483,7 +1486,8 @@
   }
   .winter #content > div, .winter #content #primary > div, .winter #content #sidebar > div,
   .winter #content #advanced-search-form > div, .winter #content #exhibit-pages {
-    border-color: #4b6569;
+  /* COMP CHANGE */
+    border-color: grey;
   }
   .winter #content #primary > div, .winter #content #sidebar > div {
     background-color: #fff;
