@@ -55,6 +55,7 @@
             <a href="https://www.facebook.com"><img src="/themes/seasons-mac1/images/fb.png" alt="FacebookIcon" height="42" width="42"></a>
             <a href="https://www.linkedin.com"><img src="/themes/seasons-mac1/images/li.png" alt="LinkedinIcon" height="42" width="42"></a>
             <a href="https://www.twitter.com"><img src="/themes/seasons-mac1/images/tw.png" alt="TwitterIcon" height="42" width="42"></a>
+            <a href="http://www.mq.edu.au/"><img src="/themes/seasons-mac1/images/mq.png" alt="TwitterIcon" height="48" width="145"></a>
             </div>
            
             <div id="search-container" role="search">
