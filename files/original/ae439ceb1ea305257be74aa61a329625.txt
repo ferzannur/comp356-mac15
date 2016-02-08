@@ -1,4 +1,0 @@
-Building digital projects always takes longer than you think. Be sure to plan enough time for snafus, and warn your students that they need to plan as well.
-
-Take some time to work through the decision-making process on getting Omeka installed or using Omeka.net, before introducing it to students.
-

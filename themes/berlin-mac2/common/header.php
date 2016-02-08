@@ -33,24 +33,27 @@
     <?php echo head_js(); ?>
 </head>
  <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
+
+    <!-- C356 added for FB like -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=1006139232753768";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
     <a href="#content" id="skipnav"><?php echo __('Skip to main content'); ?></a>
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
         <header role="banner">
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
             <div id="site-title"><?php echo link_to_home_page(theme_logo()); ?></div>
 
-            <!-- C356 add social --->
-            <div class="utilities">
-            <p id="facebook"</p><a href="http://www.facebook.com/pages/Macquarie-University-Museum-of-Ancient-Cultures/129606210445366">Facebook - MAC</a>   
-	    <!--ul class="socialMedia">-->
-		<!--li class="facebook"><a href="http://www.facebook.com/pages/Macquarie-University-Museum-of-Ancient-Cultures/129606210445366">Facebook</a><-->
-		<!--li class="twitter"><a href="https://twitter.com/austmus">Twitter</a><-->
-		<!--li class="instagram"><a href="http://instagram.com/australianmuseum">Instagram</a><-->
-		<!--li class="youtube"><a href="http://www.youtube.com/user/austmus/">Youtube</a><--->
-	    <!--ul-->
-
             <!-- C356 reposition -->
-            <div id="header-image"><?php echo theme_header_image(); ?></div>
+            <div class="fb-like" data-href="https://www.facebook.com/pages/Macquarie-University-Museum-of-Ancient-Cultures/1296062104453$
+data-layout="box_count" data-action="like" data-show-faces="true" data-share="false"></div>
+            <!-- iv id="header-image"><?php echo theme_header_image(); ?>---div -->
 
             <div id="search-container" role="search">
                 <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>

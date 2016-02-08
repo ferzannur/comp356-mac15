@@ -1,14 +1,14 @@
 .jcarousel-wrapper {
-    margin: 10px auto;  /*C356 was 20 */
+    margin: 20px auto;
     position: relative;
-    border: 15px solid #76232f; /* C356 was 20px and #fff */
+    border: 10px solid #000; /* C356 was fff */
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    -webkit-box-shadow: 0 0 2px #76232f; /*c356 was 999 */
-    -moz-box-shadow: 0 0 2px #76232f;  /*c356 was 999 */
-    box-shadow: 0 0 2px #76232f;    /*c356 was 999 */
-    background: #76232f;  /*c356 add */
+    -webkit-box-shadow: 0 0 2px #000; /*c356 was 999 */
+    -moz-box-shadow: 0 0 2px #000;  /*c356 was 999 */
+    box-shadow: 0 0 2px #000;    /*c356 was 999 */
+    background: #000;  /*c356 add */
 }
 
 /** Carousel **/
@@ -30,7 +30,7 @@
 .jcarousel li {
     width: 200px;
     float: left;
-    border: 1px solid #76232f; /*c356 was fff */
+    border: 1px solid #000; /*c356 was fff */
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -53,7 +53,7 @@
     width: 50px; /* C356 mac1 */
     height: 30px; /* C356 mac1 */
     text-align: center;
-    background: #000;  /*c356  was 4E443C */
+    background: #a6192e;  /*c356  was 4E443C */
     color: #fff;
     text-decoration: none;
     text-shadow: 0 0 2px #fff;  /* c356 was 000 */

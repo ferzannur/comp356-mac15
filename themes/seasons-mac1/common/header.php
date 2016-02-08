@@ -22,7 +22,7 @@
 
     <!-- Stylesheets -->
     <?php
-    queue_css_url('//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic');
+    queue_css_url('//https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700,300italic,400italic,500italic,700italic');
     queue_css_file(array('iconfonts', 'normalize', 'style'), 'screen');
     queue_css_file('print', 'print');
     echo head_css();
@@ -50,6 +50,14 @@
             <div id="site-title">
                 <?php echo link_to_home_page(theme_logo()); ?>
             </div>
+            
+            <div id="follow-us">
+            <a href="https://www.facebook.com"><img src="/themes/seasons-mac1/images/fb.png" alt="FacebookIcon" height="42" width="42"></a>
+            <a href="https://www.linkedin.com"><img src="/themes/seasons-mac1/images/li.png" alt="LinkedinIcon" height="42" width="42"></a>
+            <a href="https://www.twitter.com"><img src="/themes/seasons-mac1/images/tw.png" alt="TwitterIcon" height="42" width="42"></a>
+            <a href="http://www.mq.edu.au/"><img src="/themes/seasons-mac1/images/mq.png" alt="TwitterIcon" height="48" width="145"></a>
+            </div>
+           
             <div id="search-container" role="search">
                 <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
                 <?php echo search_form(array('show_advanced' => true)); ?>
@@ -57,6 +65,7 @@
                 <?Php echo search_form(); ?>
                 <?php endif; ?>
             </div>
+                        
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
         </header>
 
