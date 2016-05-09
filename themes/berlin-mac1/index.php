@@ -1,16 +1,18 @@
 <?php echo head(array('bodyid'=>'home', 'bodyclass' =>'two-col')); ?>
-<!-- C356 mac1: add Shrotcode Carousel -->
-<p><?php echo $this->shortcodes('[featured_carousel autoscroll=true interval=1500]'); ?></p>
+<!-- C356 mac1: add Shrotcode Carousel-->
+
 
 <div id="primary">
-    <?php if ($homepageText = get_theme_option('Homepage Text')): ?>
-    <p><?php echo $homepageText; ?></p>
-    <?php endif; ?>
-    <?php if ((get_theme_option('Display Featured Exhibit')) && function_exists('exhibit_builder_display_random_featured_exhibit')): ?>
-    <!-- Featured Exhibit -->
-    <?php echo exhibit_builder_display_random_featured_exhibit(); ?>
-    <?php endif; ?>
 
+ <?php if ((get_theme_option('Display Featured Exhibit')) && function_exists('exhibit_builder_display_random_featured_exhibit')): ?>
+    <!-- Featured Exhibit -->
+    <!------------------------------------------------- ADDED BY EMEL - CODE START ------------------------------------------------------------------------>
+
+    <?php /*echo exhibit_builder_display_random_featured_exhibit(); */ ?>
+
+	<!------------------------------------------------- ADDED BY EMEL - CODE FINISH --------->
+    
+    <?php endif; ?>
     <?php
     $recentItems = get_theme_option('Homepage Recent Items');
     if ($recentItems === null || $recentItems === ''):
@@ -30,9 +32,18 @@
 </div><!-- end primary -->
 
 <div id="secondary">
+    <!------------------------------------------------- ADDED BY EMEL - CODE START ------------------------------------------------------------------------>
+
+     <?php if ($homepageText = get_theme_option('Homepage Text')): ?>
+    <p><?php echo $homepageText; ?></p>
+    <?php endif; ?>
+    <!------------------------------------------------- ADDED BY EMEL CODE - CODE FINISH ------------------------------------------------------------------------>          
+
+       <!------------------------------------------------- ADDED BY EMEL - CODE START ------------------------------------------------------------------------>
+
     <?php if (get_theme_option('Display Featured Collection')): ?>
     <!-- Featured Collection -->
-    <div id="featured-collection" class="featured">
+    <div id="featured-collection" class="featured col-xs-6 col-sm-4">
         <h2><?php echo __('Featured Collection'); ?></h2>
         <?php echo random_featured_collection(); ?>
     </div><!-- end featured collection -->
@@ -40,13 +51,18 @@
 
     <?php if (get_theme_option('Display Featured Item') == 1): ?>
     <!-- Featured Item -->
-    <div id="featured-item" class="featured">
+    <div id="featured-item" class="featured col-xs-6 col-sm-4">
         <h2><?php echo __('Featured Item'); ?></h2>
         <?php echo random_featured_items(1); ?>
     </div><!--end featured-item-->
     <?php endif; ?>
 
     <?php fire_plugin_hook('public_home', array('view' => $this)); ?>
+     <! ----------------------- ADDED by Emel - CODE START ------------------------------------------------>
+         <?php echo exhibit_builder_display_random_featured_exhibit(); ?>
+
+    
+	<!---------------------- ADDED by Emel - CODE FINISH -------------------------------------------->
 
 </div><!-- end secondary -->
 <?php echo foot(); ?>
